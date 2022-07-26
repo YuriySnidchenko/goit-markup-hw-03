@@ -1,0 +1,276 @@
+:root {
+    --main-color: rgb(33, 33, 33);
+    --secondary-color: rgb(117, 117, 117);
+    --white-color: rgb(255, 255, 255);
+    --btn-color: rgb(33, 150, 243);
+    --btn-secondary-color: #F5F4FA;
+    --btn-secondary-hover: rgb(33, 150, 243);
+    --bg-gray-color: rgba(245, 244, 250, 1);
+    --bg-black-color: rgb(47, 48, 58);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Загалні параметри css */
+body {
+    background-color: var(--white-color);
+    color: var(--main-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+
+/* значення для всіх - ul*/
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* стандарти для всіх заголовків */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+header a,
+footer a {
+    text-decoration: none;
+}
+
+/* navigation & logo WebStudio */
+.logo {
+    color: var(--main-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.20;
+}
+
+.logo:hover,
+.logo:focus {
+    color: none;
+}
+
+.white {
+    color: var(--white-color);
+}
+
+.first {
+    color: var(--btn-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: rgb(33, 150, 243);
+}
+
+.contact-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: rgb(33, 150, 243);
+}
+
+/* title -  */
+
+/* .main-section {
+    background-color: var(--bg-black-color);
+} - хотів накинути background color - через стилі,але чомусь не виходить */
+
+.bg-main-color {
+    background-color: #2F303A;
+}
+
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    line-height: 1, 36;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.main-btn {
+    background-color: var(--btn-color);
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+
+/* our project */
+
+.advantage-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.advantage-discription {
+    color: var(--secondary-color);
+    font-weight: 400;
+    line-height: 1.7;
+    text-transform: none;
+}
+
+/* Приемущества */
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+/*
+.priority ul>li>img {
+    border-radius: 50;
+}
+Пробовал разными способами, но что то блокирует заданные параметры */
+
+.pictures-size img {
+    /* не пойму как правильно тут сделать !!! почему то не срабатывает */
+    width: 370;
+}
+
+/* Блок - команда */
+.team {
+    background-color: var(--bg-gray-color);
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.19;
+}
+
+.team-description {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team.photo {
+    height: 260px;
+    width: 270px;
+    border-radius: 0px;
+}
+
+/* футер */
+
+footer {
+    background-color: var(--bg-black-color);
+}
+
+/* portfolio main*/
+/* кнопки*/
+.btn-portfolio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 150, 243);
+}
+
+.contact-map {
+    font-weight: 400;
+    line-height: 1.71;
+    color: rgb(255, 255, 255);
+}
+
+.contact-footer {
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-footer:hover,
+.contact-footer:focus {
+    color: rgb(33, 150, 243);
+}
+
+/* Портфолио main */
+.portfolio {
+    width: 370px;
+}
+
+.nav-link-active {
+    color: var(--btn-color);
+}
+
+.nav-link-active {
+    color: var(--btn-color);
+}
+
+/* Активний фільтр */
+.btn-portfolio-active {
+    color: var(--white-color);
+    background-color: var(--btn-color);
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-discription {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #757575;
+    ;
+}
